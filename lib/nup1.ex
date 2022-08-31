@@ -31,7 +31,7 @@ defmodule Terceira do
   end
 
   def listaPessoasIdadePar(pessoas) do
-    Enum.filter(pessoas, fn x -> rem(elem(x, 1), 2) == 0 end)
+    Enum.filter(pessoas, fn x -> rem(elem(x, 1), 2) != 0 end)
   end
 end
 
